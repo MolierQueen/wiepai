@@ -9,5 +9,17 @@
 #import "MovieModel.h"
 
 @implementation MovieModel
+- (id) initWithPic:(NSString *)picName
+     andTitle:(NSString * )title
+      andTime:(NSString *)time
+  andVideoUrl:(NSString*)videoUrl {
+    if ([super init]) {
+        _pic = picName;
+        _title = title;
+        _time = time;
+        _url = videoUrl;
+    }
+    return self;
+}
 
 @end
