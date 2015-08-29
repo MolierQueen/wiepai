@@ -90,6 +90,7 @@
         }
     } else {
         NSLog(@"取消");
+        self.textInfo(@"",@"");
         [self customRemoveFromSuperview];
     }
 }
